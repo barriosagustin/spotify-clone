@@ -25,11 +25,12 @@ export class TrackService {
     return this.http.get(`${this.URL}/tracks`)
     .pipe(
       map(({data}:any) => {
-        return data.reverse(),
-        catchError((err) => {
-          console.log('algo paso');
-          return of([])
-        })
+        return data.reverse()
+        
+        // catchError((err) => {
+        //   console.log('algo paso');
+        //   return of([])
+        // })
       })
     )
   
