@@ -48,6 +48,22 @@
     color: var(--color-4);
 }
 
+.login-auth-page .login-social-zone .without-login {
+    background-color: #e28181;
+    color: var(--color-4);
+    transition: transform 0.3s ease;
+    animation: move 1.5s infinite;
+}
+
+@keyframes move{
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+}
+
 .login-auth-page .separator {
     width: 100%;
     margin: 2rem 0;
